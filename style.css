@@ -1,0 +1,211 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=EB+Garamond:wght@400;500&family=Satisfy&display=swap');
+ 
+
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.navbar{
+  position: fixed;
+  background-color: transparent;
+  width: 100%;
+  padding: 30px 0;
+  top: 0;
+  z-index: 100;
+  line-height: 20px;
+}
+.inner-width{
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-family: 'Great Vibes',cursive;
+  color: #fff;
+  cursor: pointer;
+}
+.logo span{
+  font-size: 38px;
+  color: lightblue;
+}
+.navbar-menu a{
+  font-size: 13px;
+  font-weight: 500;
+  font-family: 'Raleway',sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 35px;
+  display: inline-block;
+}
+.navbar-menu a::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 1.8px;
+  background-color: lightblue;
+  transition: width .3s;
+}
+.navbar-menu a:hover::after{
+  width: 100%;
+}
+
+#home{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.content1{
+  background-color: /*#ad967c*/ /*#f768a6*/ /*#f27fa4*/ #00428c;
+
+}
+.content2{
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)),url("https://techcrunch.com/wp-content/uploads/2016/06/highered.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.content1 .content{
+  color: #000;
+  padding: 20px;
+  background-color: /*#a2ce7a*/ /* #820000*/ /*#f27fa4*/ #B0E0E6;
+  position: absolute;
+  left: 150px;
+  top: 340px;
+  text-align: left;
+  width: 500px;
+  height: 317px;
+}
+.content p{
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 500;
+  letter-spacing: 1.1px;
+  font-family: 'Raleway',sans-serif
+}
+.content button{
+  padding: 17px 25px;
+  margin-top: 30px;
+  background-color: lightblue;
+  border: none;
+  color: #000;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  font-family: 'Dancing Script', cursive;;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: .3s;
+}
+.content button:hover{
+  color: #fff;
+}
+@keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Apply the animation to the content2 section */
+  .content2 h1 {
+    animation: slideIn 1s ease-out forwards;
+  }
+  
+  
+.social-container{
+  position: absolute;
+  left: 40px;
+  bottom: 30%;
+}
+.social-icons{
+  list-style: none;
+}
+.social-icons li{
+  margin: 35px 0;
+}
+.social-icons li i{
+  color: rgba(255,255,255,0.77);
+  font-size: 20px;
+}
+.social-icons li a:hover i{
+  transform: scale(1.5);
+  color: lightblue;
+  transition: all .2s ease-in-out;
+}
+.social-icons::before{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 150px;
+  top: -170px;
+  left: 8px;
+  background-color: #000000b0;
+}
+.social-icons::after{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 150px;
+  bottom: -170px;
+  left: 8px;
+  background-color: #000000b0;
+}
+.content2 h1{
+  position: absolute;
+  left: 200px;
+  top: 240px;
+  font-size: 80px;
+  font-family: 'EB Garamond', serif;
+  font-weight: 500;
+  color: lightblue;
+  letter-spacing: 8px;
+}
+
+.content2 h1 span{
+  color: lightblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
